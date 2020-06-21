@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Sport Magazine</string>
+    <string name="iniciar">iniciar</string>
+    <string name="siguiente">siguiente</string>
+    <string name="noticias">noticias</string>
+    <string name="tienda">tienda</string>
+    <string name="vender">vender</string>
+    <string name="lugares">lugares</string>
+
+</resources>
