@@ -20,7 +20,7 @@ public class listanoticias extends AppCompatActivity {
 
         final ListView list = findViewById(R.id.lista);
         final ArrayList<Noticia> arrayList = new ArrayList<Noticia>();
-        arrayList.add(new Noticia("Futbol", R.drawable.noti1, "ntes de comenzar a teclear en tu computador es imprescindible que tengas muy claro: Qué quieres contar, a quién se lo vas a contar y cómo lo vas a contar. Si logras tener un esquema mental de cómo será la noticia, la tarea de redactarla se hará mucho más sencilla. Recuerda siempre los dos objetivos: informar con la mayor veracidad posible y satisfacer el interés del lector."));
+        arrayList.add(new Noticia("Con goles de Cristiano y Dybala, Juventus venció al Bologna y se afirmó como líder de la Serie A", R.drawable.cristiano, "La Juventus se recuperó este lunes de la derrota ante Napoli en la final de la Copa Italia y venció por 2 a 0 al Bologna en el suelo correspondiente a la jornada 27 de la Serie A. Cristiano Ronaldo y Paulo Dybala fueron los autores de los tantos del equipo que sobre el final sufrió la expulsión de Danilo."));
         arrayList.add(new Noticia("Moto", R.drawable.noti2,"Cualquier acontecimiento puede ser tratado de diferentes maneras, desde distintas perspectivas. Haz la prueba: ponte de acuerdo con tres o cuatro compañeros y propónles relatar por escrito un mismo acontecimiento del que hallan sido protagonistas o testigos. Seguro que cuando lean lo que cada uno ha escrito encontrarán muchas diferencias."));
         CustomAdapter arrayAdapter=new CustomAdapter(this,arrayList);
 
