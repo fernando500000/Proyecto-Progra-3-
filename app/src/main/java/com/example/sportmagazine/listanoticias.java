@@ -21,7 +21,7 @@ public class listanoticias extends AppCompatActivity {
         final ListView list = findViewById(R.id.lista);
         final ArrayList<Noticia> arrayList = new ArrayList<Noticia>();
         arrayList.add(new Noticia("Con goles de Cristiano y Dybala, Juventus venció al Bologna y se afirmó como líder de la Serie A", R.drawable.cristiano, "La Juventus se recuperó este lunes de la derrota ante Napoli en la final de la Copa Italia y venció por 2 a 0 al Bologna en el suelo correspondiente a la jornada 27 de la Serie A. Cristiano Ronaldo y Paulo Dybala fueron los autores de los tantos del equipo que sobre el final sufrió la expulsión de Danilo."));
-        arrayList.add(new Noticia("Moto", R.drawable.noti2,"Cualquier acontecimiento puede ser tratado de diferentes maneras, desde distintas perspectivas. Haz la prueba: ponte de acuerdo con tres o cuatro compañeros y propónles relatar por escrito un mismo acontecimiento del que hallan sido protagonistas o testigos. Seguro que cuando lean lo que cada uno ha escrito encontrarán muchas diferencias."));
+        arrayList.add(new Noticia("MotoGP: Canceladas las dos primeras carreras del Mundial en Catar y Tailandia por el coronavirus", R.drawable.noti2," Se siguen cancelando eventos debido al miedo a la propagación del coronavirus y el último ha sido el mundial de motociclismo. Dorna ha decidido suspender la carrera de la máxima categoría, aunque las de Moto2 y Moto3 podrían disputarse debido a que los pilotos ya están en el circuito. La segunda prueba en Tailandia también ha sido suspendida unas horas después."));
         CustomAdapter arrayAdapter=new CustomAdapter(this,arrayList);
 
 //assign adapter to listview
