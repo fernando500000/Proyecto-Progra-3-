@@ -7,11 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class listanoticias extends AppCompatActivity {
+public class ListaNoticias extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +30,7 @@ public class listanoticias extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                Intent activity2Intent = new Intent(getApplicationContext(), mostrarnoticia.class);
+                Intent activity2Intent = new Intent(getApplicationContext(), MostrarNoticia.class);
                 activity2Intent.putExtra("ID_EXTRA1", arrayList.get(i).getPortada());
                 activity2Intent.putExtra("ID_EXTRA2", arrayList.get(i).getTitulo());
                 activity2Intent .putExtra("ID_EXTRA3", arrayList.get(i).getTexto());

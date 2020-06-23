@@ -9,13 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".mostrarnoticia"></activity>
-        <activity android:name=".tienda" />
-        <activity android:name=".listanoticias" />
-        <activity android:name=".Menutool" />
+        <activity android:name=".MostrarNoticia"></activity>
+        <activity android:name=".Tienda" />
+        <activity android:name=".ListaNoticias" />
+        <activity android:name=".MenuTool" />
         <activity android:name=".MenuActivity" />
-        <activity android:name=".Meni" />
+       <activity android:name=".GymActivity" />
+        <activity android:name=".ItemGym" />
+
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

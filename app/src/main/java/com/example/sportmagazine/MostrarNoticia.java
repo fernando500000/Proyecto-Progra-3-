@@ -8,7 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class mostrarnoticia extends AppCompatActivity {
+public class MostrarNoticia extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +20,8 @@ public class mostrarnoticia extends AppCompatActivity {
         String texto1= extras.getString("ID_EXTRA3");
         String titulo= extras.getString("ID_EXTRA2");
 
-        TextView texto= (TextView) findViewById(R.id.futbol);
-        TextView ti= (TextView) findViewById(R.id.titulo1);
+        TextView texto=  findViewById(R.id.futbol);
+        TextView ti= findViewById(R.id.titulo1);
         ImageView portada= (ImageView) findViewById(R.id.portada1);
         ti.setText(titulo);
         texto.setText(texto1);

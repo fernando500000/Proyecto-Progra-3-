@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class MenuActivity extends AppCompatActivity {
     Button mButtonsiguiente;
@@ -21,7 +20,7 @@ public class MenuActivity extends AppCompatActivity {
                 {
                     public void onClick(View view)
                     {
-                        Intent activity2Intent = new Intent(getApplicationContext(), Menutool.class);
+                        Intent activity2Intent = new Intent(getApplicationContext(), MenuTool.class);
 
                             startActivity(activity2Intent);
                         }
