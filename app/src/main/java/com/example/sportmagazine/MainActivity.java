@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button   mButton;
+    Button   register;
     EditText mEdit;
     EditText mEdit2;
     @Override
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
          mEdit   = (EditText)findViewById(R.id.user);
          mEdit2   = (EditText)findViewById(R.id.pasword);
          mButton = (Button)findViewById(R.id.login);
+        register = (Button)findViewById(R.id.registro);
         mButton.setOnClickListener(
                 new View.OnClickListener()
                 {
@@ -39,7 +41,20 @@ public class MainActivity extends AppCompatActivity {
 
                     }
                 });
+        register.setOnClickListener(
+                new View.OnClickListener()
+                {
+                    public void onClick(View view)
+                    {
 
+                        Intent activity2Intent = new Intent(getApplicationContext(), Formulario.class);
+
+                            startActivity(activity2Intent);
+
+
+
+                    }
+                });
     }
 
 
