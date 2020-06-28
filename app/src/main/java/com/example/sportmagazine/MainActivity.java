@@ -2,7 +2,9 @@ package com.example.sportmagazine;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -28,10 +30,15 @@ public class MainActivity extends AppCompatActivity {
                 {
                     public void onClick(View view)
                     {
-                        System.out.println(mEdit.getText());
-                        System.out.println(mEdit2.getText());
+
+                        SharedPreferences preferences= getSharedPreferences("Usuario", Context.MODE_PRIVATE);
+                        String nom= preferences.getString("nombre","Sin nada");
+                        String ape= preferences.getString("apeliido","Sin nada");
+                        String cor= preferences.getString("correo","Sin nada");
+                        String pas= preferences.getString("password","Sin nada");
+
                         Intent activity2Intent = new Intent(getApplicationContext(), MenuActivity.class);
-                        if(mEdit.getText().toString().equals("1") && mEdit2.getText().toString().equals("1") ){
+                        if(mEdit.getText().toString().equals(nom) && mEdit2.getText().toString().equals(pas) ){
 
                             startActivity(activity2Intent);
                         }else{
@@ -46,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
                 {
                     public void onClick(View view)
                     {
+
+
 
                         Intent activity2Intent = new Intent(getApplicationContext(), Formulario.class);
 
