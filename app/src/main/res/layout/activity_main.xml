@@ -17,7 +17,8 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:inputType="text"
-        android:layout_marginTop="90dp"
+        android:hint="@string/name"
+        android:layout_marginTop="40dp"
 
         />
 
@@ -27,6 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:inputType="textPassword"
+        android:hint="@string/pass"
         android:layout_marginTop="20dp"
 
         />
@@ -38,6 +40,17 @@
         android:layout_gravity="center"
         android:background="#193045"
         android:text="@string/iniciar"
+        android:layout_marginTop="3pt"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/registro"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#193045"
+        android:text="@string/re"
+        android:layout_marginTop="3pt"
         android:textColor="#FFFFFF" />
 
 

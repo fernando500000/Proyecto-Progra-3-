@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button   mButton;
+    Button   register;
     EditText mEdit;
     EditText mEdit2;
     @Override
@@ -21,13 +22,7 @@ public class MainActivity extends AppCompatActivity {
          mEdit   = (EditText)findViewById(R.id.user);
          mEdit2   = (EditText)findViewById(R.id.pasword);
          mButton = (Button)findViewById(R.id.login);
-
-
-
-
-         final String [] usuarios = {"fernando" , "kevin" ,"uh","1"};
-         final String [] passwords = {"123456789","1"};
-
+        register = (Button)findViewById(R.id.registro);
         mButton.setOnClickListener(
                 new View.OnClickListener()
                 {
@@ -35,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
                     {
                         System.out.println(mEdit.getText());
                         System.out.println(mEdit2.getText());
-                        Intent activity2Intent = new Intent(getApplicationContext(), MenuTool.class);
-                        if(mEdit.getText().toString().equals(usuarios[3]) && mEdit2.getText().toString().equals(passwords[1]  ) ){
+                        Intent activity2Intent = new Intent(getApplicationContext(), MenuActivity.class);
+                        if(mEdit.getText().toString().equals("1") && mEdit2.getText().toString().equals("1") ){
 
                             startActivity(activity2Intent);
                         }else{
@@ -46,9 +41,20 @@ public class MainActivity extends AppCompatActivity {
 
                     }
                 });
+        register.setOnClickListener(
+                new View.OnClickListener()
+                {
+                    public void onClick(View view)
+                    {
+
+                        Intent activity2Intent = new Intent(getApplicationContext(), Formulario.class);
+
+                            startActivity(activity2Intent);
 
 
 
+                    }
+                });
     }
 
 
